@@ -346,6 +346,18 @@
         <file alias="Viewer3D/Models3D/Line3D.qml">src/Viewer3D/Viewer3DQml/Models3D/Line3D.qml</file>
         <file alias="Viewer3D/Models3D/Viewer3DVehicleItems.qml">src/Viewer3D/Viewer3DQml/Models3D/Viewer3DVehicleItems.qml</file>
         <file alias="Viewer3D/Viewer3DProgressBar.qml">src/Viewer3D/Viewer3DQml/Viewer3DProgressBar.qml</file>
+        <file alias="AirspeedIndicator.qml">src/FlightMap/Widgets/EFIS/EADI/AirspeedIndicator.qml</file>
+        <file alias="Altimeter.qml">src/FlightMap/Widgets/EFIS/EADI/Altimeter.qml</file>
+        <file alias="AttitudeIndicator.qml">src/FlightMap/Widgets/EFIS/EADI/AttitudeIndicator.qml</file>
+        <file alias="CustomImage.qml">src/FlightMap/Widgets/EFIS/EADI/CustomImage.qml</file>
+        <file alias="ElectronicAttitudeDirectionIndicator.qml">src/FlightMap/Widgets/EFIS/EADI/ElectronicAttitudeDirectionIndicator.qml</file>
+        <file alias="HeadingIndicator.qml">src/FlightMap/Widgets/EFIS/EADI/HeadingIndicator.qml</file>
+        <file alias="Labels.qml">src/FlightMap/Widgets/EFIS/EADI/Labels.qml</file>
+        <file alias="VerticalSpeedIndicator.qml">src/FlightMap/Widgets/EFIS/EADI/VerticalSpeedIndicator.qml</file>
+        <file alias="CustomImage.qml">src/FlightMap/Widgets/EFIS/EHSI/CustomImage.qml</file>
+        <file alias="ElectronicHorizontalSituationIndicator.qml">src/FlightMap/Widgets/EFIS/EHSI/ElectronicHorizontalSituationIndicator.qml</file>
+        <file alias="Labels.qml">src/FlightMap/Widgets/EFIS/EHSI/Labels.qml</file>
+        <file alias="EFIS.qml">src/FlightMap/Widgets/EFIS.qml</file>
     </qresource>
     <qresource prefix="/FirstRunPromptDialogs">
         <file alias="UnitsFirstRunPrompt.qml">src/FirstRunPromptDialogs/UnitsFirstRunPrompt.qml</file>
