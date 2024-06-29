@@ -2,13 +2,20 @@ import QtQuick 2.15
 import QtQuick.Window 2.15
 import QtQuick.Layouts 1.15
 import QtQuick.Controls 2.15
+
+import QGroundControl
+import QGroundControl.Controls
+import QGroundControl.FactSystem
+import QGroundControl.FlightMap
+import QGroundControl.FlightDisplay
+import QGroundControl.Palette
 import QGroundControl.ScreenTools
 
 Item {
     id: control
     implicitWidth: 800
     implicitHeight: 600
-    // width:      Math.min(_defaultWidth, _maxWidth)
+    width:      Math.min(_defaultWidth, _maxWidth)
 
     property real extraInset:           0
     property real extraValuesWidth:     _outerRadius
@@ -19,6 +26,8 @@ Item {
     property real   _outerRadius:       _innerRadius + _topBottomMargin
     property real   _spacing:           ScreenTools.defaultFontPixelHeight * 0.33
     property real   _topBottomMargin:   (width * 0.05) / 2
+
+    property var  vehicle:      globals.activeVehicle
 
     Item {
         id: container
@@ -46,8 +55,8 @@ Item {
 
                     // adi.angleOfAttack: pfd.angleOfAttack
                     // adi.sideSlipAngle: pfd.angleOfSideSlip
-                    // adi.roll: pfd.roll
-                    // adi.pitch: pfd.pitch
+                    adi.roll: vehicle.roll.rawValue
+                    adi.pitch: vehicle.pitch.rawValue
                     // adi.slipSkid: pfd.slipSkid
                     // adi.turnRate: pfd.turnRate
                     // adi.dotH: pfd.ilsLOC
