@@ -15,7 +15,7 @@ Item {
     id: control
     implicitWidth: 800
     implicitHeight: 600
-    width:      Math.min(_defaultWidth, _maxWidth)
+    // width:      Math.min(_defaultWidth, _maxWidth)
 
     property real extraInset:           0
     property real extraValuesWidth:     _outerRadius
@@ -55,8 +55,8 @@ Item {
 
                     // adi.angleOfAttack: pfd.angleOfAttack
                     // adi.sideSlipAngle: pfd.angleOfSideSlip
-                    adi.roll: vehicle.roll.rawValue
-                    adi.pitch: vehicle.pitch.rawValue
+                    adi.roll: vehicle ? vehicle.roll.rawValue: 0
+                    adi.pitch: vehicle ? vehicle.pitch.rawValue: 0
                     // adi.slipSkid: pfd.slipSkid
                     // adi.turnRate: pfd.turnRate
                     // adi.dotH: pfd.ilsLOC
@@ -71,7 +71,7 @@ Item {
                     // asi.airspeed: pfd.airspeed
                     // asi.bugValue: pfd.airspeedBug
 
-                    // alt.altitude: pfd.altitude
+                    alt.altitude: vehicle ? vehicle.altitudeRelative.rawValue: 0
                     // alt.bugValue: pfd.altitudeBug
 
                     // hsi.heading: pfd.heading
